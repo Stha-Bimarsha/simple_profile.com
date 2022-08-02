@@ -7,7 +7,8 @@
 
 body {
 	margin: 0px;
-	background: url("https://images.unsplash.com/photo-1546955101-4ec588aef94c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDg4MDd8MHwxfHNlYXJjaHwzfHx3YWxsYXBlcnxlbnwwfHx8fDE2NTkyODcwMDk&ixlib=rb-1.2.1&q=80&w=1080");
+/* 	background: url("https://images.unsplash.com/photo-1546955101-4ec588aef94c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDg4MDd8MHwxfHNlYXJjaHwzfHx3YWxsYXBlcnxlbnwwfHx8fDE2NTkyODcwMDk&ixlib=rb-1.2.1&q=80&w=1080"); */
+	background: url("../img/main_background_img.jfif");
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: none;
