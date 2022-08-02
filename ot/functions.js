@@ -16,4 +16,4 @@ setInterval(function () {
 	}
 	second_container.style.backgroundImage = `url("./img/${back_img[i]}.jpg")`;
 	i++;
-}, 2500);
+}, 25000);
