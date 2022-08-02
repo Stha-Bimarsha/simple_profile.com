@@ -1,0 +1,32 @@
+.glow_this {
+	animation-name: glowing;
+	animation-duration: 10s;
+	transition: all 1s ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes glowing {
+	0% {
+		color: yellow;
+	
+	}
+	25% {
+		color: lime;
+	}
+	50% {
+		color: purple;
+	}
+	75% {
+		color: cyan;
+	}
+	100% {
+		color: red;
+	}
+}
+
+@keyframes slide-right {
+	from {
+		transparency: 
+	}
+}
