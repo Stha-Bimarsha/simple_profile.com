@@ -1,0 +1,104 @@
+:root {
+	--heading_font: 24px;
+	--normal_font: 18px;
+	--normal_font_color: grey;
+	--theme_this: rgba(0, 0, 0, 0.5);
+}
+
+body {
+	background: url("https://images.unsplash.com/photo-1546955101-4ec588aef94c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDg4MDd8MHwxfHNlYXJjaHwzfHx3YWxsYXBlcnxlbnwwfHx8fDE2NTkyODcwMDk&ixlib=rb-1.2.1&q=80&w=1080");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: none;
+	color: var(--normal_font_color);
+	font-family: source code pro;
+	padding: 0px;
+	/* width: 100%; */
+	/* width: 1024px; */
+	/* height: 720px; */
+	/* height: 100%; */
+	/* display: flex; */
+}
+
+#main_container {
+	height: 100%;
+	padding: 10px;
+	display: flex;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	background: rgba(0, 0, 0, 0.5);
+	color: var(--normal_font_color);
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+#heading {
+	margin-right: auto;
+	transition: all 2s ease-out;
+}
+.button_this {
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	background: var(--theme_this);
+	color: var(--normal_font_color);
+	font-size: var(--normal_font);
+}
+
+/* for the body part */
+#sign_up_container {
+	border: none;
+	margin: 10px;
+	outline: none;
+	background: var(--theme_this);
+	float: right;
+	padding: 10px;
+	font-size: var(--normal_font);
+	border-radius: 10px;
+	width: 500px;
+	height: 500px;
+}
+
+.others {
+	display: inline-block;
+}
+
+.input_this {
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	font-size: 18px;
+	margin: 10px;
+	background: var(--theme_this);
+	color: var(--normal_font_color);
+}
+
+#sign_up_heading {
+	font-size: var(--heading_font);
+	text-align: center;
+	transition: all 2s ease-out;
+}
+
+/* placeholder settings */
+::placeholder {
+	color: var(--normal_font_color);
+}
+
+/* 
+* second container
+*/
+#second_container {
+	/* width: 45%; */
+	/* height: 45%; */
+	display: inline-block;
+	background: url("../img/one.jpg");
+	background-size: cover;
+	background-repeat: none;
+	width: 720px;
+	height: 500px;
+	border: none;
+	margin: 10px;
+	border-radius: 7px;
+	outline: none;
+}

@@ -1,0 +1,43 @@
+<!--
+This is a simple website where there is only the username input and password input options
+ -->
+ <!DOCTYPE HTML>
+ <html>
+	<head>
+		<title>Lincoln College</title>
+		<meta charset="UTF-8">
+		<link rel="icon" href="./img/logo.png">
+		<link rel="stylesheet" href="./ot/main.css">
+	</head>
+	<body>
+	<!-- the login header and some username and password input -->
+		<div id="main_container">
+			<h1 id="heading" class="glow_this">Lincoln College</h1>
+			<form id="enter_enter">
+				<input placeholder="Enter your username " class="input_this" id="username_this"/>
+				<input placeholder="Enter your password " class="input_this" id="password_this"/>
+				<button id="button_one" class="button_this">Enter</button>
+			</form>
+		</div>
+	<!-- some extra contents and the sign up page. -->
+	<div class="div_this" id="second_container"></div>
+	<div class="div_this" id="sign_up_container">
+		<div id="sign_up_heading" class="glow_this">Register / Admission</div>
+		<input class="input_this" id="first_name" placeholder="Enter First Name" />
+		<input class="input_this" id="second_name" placeholder="Enter second Name" /><br>
+		<input class="input_this others" id="address_input" placeholder="Enter your address" /><br>
+		<input class="input_this others" id="age_input" placeholder="Enter your age" type="date" /><br>
+		<input class="input_this others" id="school_input" placeholder="Enter your school's name" /><br>
+		<input class="input_this others" id="grade_input" placeholder="Enter your grade" type="number" /><br>
+		<label name="faculty_input_one" class="label_this">Management<input type="radio" name="faculty_input" value_this="management"/></label>
+		<label name="faculty_input_two" class="label_this">Science<input type="radio" name="faculty_input" value_this="science"/></label>
+		<label name="faculty_input_three" class="label_this">Humanities<input type="radio" name="faculty_input" value_this="humanities"/></label>
+		<label name="faculty_input_four" class="label_this">Law<input type="radio" name="faculty_input" value_this="law"/></label>
+		<button id="button+_another" class="button_this">Submit</button>
+	</div>
+		
+	<!-- scripting -->
+	<script src="./ot/main.js"></script>
+	<script src="./ot/functions.js"></script>
+	</body>
+ </html>
