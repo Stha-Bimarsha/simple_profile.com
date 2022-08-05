@@ -7,12 +7,10 @@
 
 body {
 	margin: 0px;
-/* 	background: url("https://images.unsplash.com/photo-1546955101-4ec588aef94c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDg4MDd8MHwxfHNlYXJjaHwzfHx3YWxsYXBlcnxlbnwwfHx8fDE2NTkyODcwMDk&ixlib=rb-1.2.1&q=80&w=1080"); */
-	background: url("../../img/main_backgrond_img.jfif");
+	background: url("https://images.unsplash.com/photo-1546955101-4ec588aef94c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDg4MDd8MHwxfHNlYXJjaHwzfHx3YWxsYXBlcnxlbnwwfHx8fDE2NTkyODcwMDk&ixlib=rb-1.2.1&q=80&w=1080");
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: none;
-	-webkit-background-size: cover;
 	color: var(--normal_font_color);
 	font-family: source code pro;
 	padding: 0px;
@@ -49,6 +47,10 @@ body {
 	font-size: var(--normal_font);
 }
 
+#button_another {
+	margin-left: 150px;
+}
+
 /* for the body part */
 #sign_up_container {
 	border: none;
@@ -79,6 +81,7 @@ body {
 	color: var(--normal_font_color);
 }
 
+
 #sign_up_heading {
 	font-size: var(--heading_font);
 	text-align: center;
@@ -106,8 +109,21 @@ body {
 	margin: 10px;
 	border-radius: 7px;
 	outline: none;
+	transition: all 2s linear;
 	animation-name: slide-right;
 	animation-iteration-count: infinite;
 	animation-duration: 25s;
 	animation-direction: reverse;
+}
+
+
+/* last container  */
+#last_container {
+	display: block;
+	border-top: 6px solid lime;
+	background: rgba(0, 0, 0, 0.5);
+	color: var(--normal_font_color);
+	/* margin-top: 30px; */
+	margin: 10px;
+	border-radius: 7px;
 }

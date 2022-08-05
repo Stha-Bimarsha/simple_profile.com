@@ -27,6 +27,9 @@
 
 @keyframes slide-right {
 	from {
-		transparency: 
+		transparency: 1;
+	}
+	to {
+		transparency: 0;
 	}
 }
