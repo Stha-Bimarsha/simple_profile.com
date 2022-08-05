@@ -10,3 +10,17 @@ setInterval(function () {
 	second_container.style.backgroundImage = `url("./img/${back_img[i]}.jpg")`;
 	i++;
 }, 25000);
+
+// working on the sign-up
+const create_username = document.getElementById("username_id");
+const create_password = document.getElementById("password_id");
+const enter_enter_another = document.getElementById("enter_enter_another");
+
+enter_enter_another.addEventListener("submit", function (e) {
+	localStorage.setItem("username_value", create_username.value);
+	localStorage.setItem("password_value", create_password.value);
+	
+	input_this.forEach(function (e) {
+		e.value = "";
+	})
+})
