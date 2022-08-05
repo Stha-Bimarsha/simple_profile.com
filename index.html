@@ -2,13 +2,10 @@
 This is a simple website where there is only the username input and password input options
  -->
  <!DOCTYPE HTML>
- <html lang="en">
+ <html>
 	<head>
-		<meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
- 	        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Lincoln College</title>
-		
+		<meta charset="UTF-8">
 		<link rel="icon" href="./img/logo.png">
 		<link rel="stylesheet" href="./ot/css/main.css" />
 		<link rel="stylesheet" href="./ot/css/animation.css" />
@@ -27,20 +24,44 @@ This is a simple website where there is only the username input and password inp
 	<div class="div_this" id="second_container"></div>
 	<div class="div_this" id="sign_up_container">
 		<div id="sign_up_heading" class="glow_this">Register / Admission</div>
-		<input class="input_this" id="first_name" placeholder="Enter First Name" />
-		<input class="input_this" id="second_name" placeholder="Enter second Name" /><br>
-		<input class="input_this others" id="address_input" placeholder="Enter your address" /><br>
-		<input class="input_this others" id="age_input" placeholder="Enter your age" type="date" /><br>
-		<input class="input_this others" id="school_input" placeholder="Enter your school's name" /><br>
-		<input class="input_this others" id="grade_input" placeholder="Enter your grade" type="number" /><br>
-		<!-- radio buttons -->
-		<label name="faculty_input_one" class="label_this">Management<input type="radio" name="faculty_input faculty_input_one" value_this="management"/></label>
-		<label name="faculty_input_two" class="label_this">Science<input type="radio" name="faculty_input_two" value_this="science"/></label>
-		<label name="faculty_input_three" class="label_this">Humanities<input type="radio" name="faculty_input_three" value_this="humanities"/></label>
-		<label name="faculty_input_four" class="label_this">Law<input type="radio" name="faculty_input_four" value_this="law"/></label>
-		<button id="button+_another" class="button_this">Submit</button>
+		<form id="enter_enter_another">
+			<!-- <input class="input_this" id="first_name" placeholder="Enter First Name" /> -->
+			<!-- <input class="input_this" id="second_name" placeholder="Enter second Name" /><br> -->
+			<!-- <input class="input_this others" id="address_input" placeholder="Enter your address" /><br> -->
+			<!-- <input class="input_this others" id="age_input" placeholder="Enter your age" type="date" /><br> -->
+			<!-- <input class="input_this others" id="school_input" placeholder="Enter your school's name" /><br> -->
+			<!-- <input class="input_this others" id="grade_input" placeholder="Enter your grade" type="number" /><br> -->
+			<!-- <label name="faculty_input_one" class="label_this">Management<input type="radio" name="faculty_input" value_this="management"/></label> -->
+			<!-- <label name="faculty_input_two" class="label_this">Science<input type="radio" name="faculty_input" value_this="science"/></label> -->
+			<!-- <label name="faculty_input_three" class="label_this">Humanities<input type="radio" name="faculty_input" value_this="humanities"/></label> -->
+			<!-- <label name="faculty_input_four" class="label_this">Law<input type="radio" name="faculty_input" value_this="law"/></label> -->
+			<!-- <button id="button_another" class="button_this">Submit</button> -->
+			<label name="first_name">First Name: </label>
+			<input name="first_name" class="input_this" id="first_name_id" /><br>
+			<label name="Last_name">Last Name : </label>
+			<input name="last_name" class="input_this" id="second_name_id" /><br>
+			<label name="address">Address : </label>
+			<input name="address" class="input_this" id="address_id" /><br>
+			<label name="contact">Contact No : </label>
+			<input name="contact" class="input_this" id="contact_id" type="number" maxlength="10" /><br>
+			<label name="email">Email : </label>
+			<input name="email" class="input_this" id="email_id" type="email" placeholder="example@email.com"/><br>
+			<label name="school_name">School name : </label>
+			<input name="school_name" class="input_this" id="school_id" /><br>
+			<label name="date">Date of birth : </label>
+			<input name="date" class="input_this" id="date_id" type="date" /><br>
+			<label name="faculty">Faculty : </label>
+			<input name="faculty" class="input_this" id="faculty_id" /><br>
+			<label name="create_username">Create Username : </label>
+			<input name="create_username" placeholder="username_this" class="input_this" id="username_id" /><br>
+			<label name="create_password">Create Password : </label>
+			<input name="create_password" placeholder="password_this" class="input_this" id="password_id" /><br>
+			<button id="button_another" class="button_this">Sign_up</button>
+		</form>
 	</div>
-		
+	<div class="div_this" id="last_container">
+		This is a beginner's project where I have tried to display things I have learnt from the internet about html, css and javascript. In this particular project. There are some animations, some logic (such as if username and password is correct then the output will be different from when they are incorrect.) As I am still learning about data base I don't know about it much, thus, I have just stored the value of username and password in the local storage. If the username and password are correct then the output will be a input box with a button. It will lead to a google search. That is all, I am very thank ful to my colleagues to contribute in this project. &copy;
+	</div>	
 	<!-- scripting -->
 	<script src="./ot/js/main.js"></script>
 	<script src="./ot/js/functions.js"></script>
