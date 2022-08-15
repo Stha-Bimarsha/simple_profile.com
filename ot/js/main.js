@@ -41,6 +41,9 @@ enter_enter.addEventListener("submit", function (e) {
 	if (username_input.value == username_value_here && password_input.value == password_value_here) {
 		if_correct_this();
 	}
+	else if (username_input.value === "username_this" && password_input.value === "password_this") {
+		location.href = `../temp.html`;
+	}
 	else {
 		document.write("Invalid Input, the username or password that you have entered is incorrect \n");
 	}
