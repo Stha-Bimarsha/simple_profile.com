@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<form id="enter_enter">
+			<input placeholder="Enter your name" id="input_name" />
+			<button id="btn_this">Enter</button>
+		</form>	
+		<style>
+			.background_style {
+				background-attachment: fixed;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+		</style>
+		<script>
+			// setting the background
+			document.body.style.backgroundImage = `url("https://images2.alphacoders.com/516/thumb-1920-516664.jpg")`;
+			document.body.classList.add("background_style");
+			// function_take_it_all -> It clears the whole of the document and then says good afternoon %user_input%
+			function take_it_all (value_one) {
+				document.body.innerHTML = "";
+				document.write("Good Afternoon !!!! " + value_one);
+			};
+		
+			// defining the elements with variables
+			const enter_enter = document.getElementById("enter_enter");
+			const input_name = document.getElementById("input_name");
+			
+			input_name.focus();
+			enter_enter.addEventListener("submit", function (e) {
+				e.preventDefault();
+				if (input_name.value == "shubham" || input_name.value == "shubham stha" || input_name.value == "shubham shrestha") {
+					take_it_all(input_name.value);
+				}
+				else if (input_name.value != "subham") {
+					alert("I know your name is subham, so enter your name correctly");
+				}
+				else {
+					console.log("It does not match ");
+				}
+				
+				input_name.value = "";
+			})
+		</script>
+	</body>
+</html>
